@@ -4,6 +4,7 @@ import Controller.GameController;
 
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.io.IOException;
 
 public class MyKeyListener implements KeyListener {
 
@@ -16,13 +17,29 @@ public class MyKeyListener implements KeyListener {
     public void keyPressed(KeyEvent keyEvent) {
 
         if (keyEvent.getKeyCode() == KeyEvent.VK_RIGHT) {
-            GameController.getInstance().moveRight();
+            try {
+                GameController.getInstance().moveRight();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         } else if (keyEvent.getKeyCode() == KeyEvent.VK_LEFT) {
-            GameController.getInstance().moveLeft();
+            try {
+                GameController.getInstance().moveLeft();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         } else if (keyEvent.getKeyCode() == KeyEvent.VK_UP) {
-            GameController.getInstance().moveUp();
+            try {
+                GameController.getInstance().moveUp();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         } else if (keyEvent.getKeyCode() == KeyEvent.VK_DOWN) {
-            GameController.getInstance().moveDown();
+            try {
+                GameController.getInstance().moveDown();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 

@@ -1,6 +1,8 @@
-package View;
+package Controller;
 
 import Controller.GameController;
+import View.GamePanel;
+import View.MyMainFrame;
 
 import javax.swing.*;
 import java.awt.*;
