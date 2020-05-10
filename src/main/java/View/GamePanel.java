@@ -30,10 +30,6 @@ public class GamePanel extends JPanel {
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         Graphics2D graphics2D = (Graphics2D) g;
-        try {
-            GameController.getInstance().drawBoard(this, graphics2D);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        GameController.getInstance().drawBoard( graphics2D);
     }
 }

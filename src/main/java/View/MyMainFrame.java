@@ -5,8 +5,6 @@ import java.awt.*;
 
 public class MyMainFrame extends JFrame {
 
-//    private static MyMainFrame myMainFrame=new MyMainFrame();
-//    public static MyMainFrame getInstance(){return myMainFrame;}
 
     public MyMainFrame() {
         int screenWidth, screenHeight;
